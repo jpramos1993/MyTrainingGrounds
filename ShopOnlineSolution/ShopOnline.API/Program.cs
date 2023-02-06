@@ -18,6 +18,8 @@ builder.Services.AddDbContextPool<ShopOnlineDbContext>(options => options.UseSql
 // Next in the console insert => update-database
 //
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
