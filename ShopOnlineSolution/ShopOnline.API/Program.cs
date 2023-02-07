@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShopOnline.API.Data;
+using ShopOnline.API.Repositories;
+using ShopOnline.API.Repositories.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +20,13 @@ builder.Services.AddDbContextPool<ShopOnlineDbContext>(options => options.UseSql
 // Next in the console insert => update-database
 //
 
+//
+// AddTransient => New instance is provided in dependency injection
+// AddSingleton => Same class is provided in dependency injection
+// Add Scoped => inbetween between transient and singleton
+//
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
