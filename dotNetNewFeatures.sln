@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonChanges", "JsonChanges\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsValidation", "OptionsValidation\OptionsValidation.csproj", "{8834AF9B-0294-48F5-B453-B9050C2563BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowStringsWork", "HowStringsWork\HowStringsWork.csproj", "{FB549F1F-A1A3-4EFA-83DD-DDB883577114}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowStringsWork", "HowStringsWork\HowStringsWork.csproj", "{FB549F1F-A1A3-4EFA-83DD-DDB883577114}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowHttpClientWorks", "HowHttpClientWorks\HowHttpClientWorks.csproj", "{7AF748F6-C09D-44F0-9551-DF835DC9915F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowHttpClientWorks", "HowHttpClientWorks\HowHttpClientWorks.csproj", "{7AF748F6-C09D-44F0-9551-DF835DC9915F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyCollections", "EmptyCollections\EmptyCollections.csproj", "{354BE785-B9A3-4C54-A915-68D3C962B3A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7AF748F6-C09D-44F0-9551-DF835DC9915F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AF748F6-C09D-44F0-9551-DF835DC9915F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AF748F6-C09D-44F0-9551-DF835DC9915F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354BE785-B9A3-4C54-A915-68D3C962B3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354BE785-B9A3-4C54-A915-68D3C962B3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354BE785-B9A3-4C54-A915-68D3C962B3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354BE785-B9A3-4C54-A915-68D3C962B3A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
