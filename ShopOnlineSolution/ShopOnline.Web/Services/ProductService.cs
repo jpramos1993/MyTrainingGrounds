@@ -4,6 +4,7 @@ using System.Net.Http.Json;
 
 namespace ShopOnline.Web.Services
 {
+
     public class ProductService : IProductService
     {
         private readonly HttpClient httpClient;
