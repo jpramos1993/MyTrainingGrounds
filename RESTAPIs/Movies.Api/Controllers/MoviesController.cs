@@ -34,6 +34,7 @@ public class MoviesController : ControllerBase
         var response = new MovieResponse
         {
             Id = movie.Id,
+            Slug = movie.Slug,
             Title = movie.Title,
             Genres = movie.Genres,
             YearOfRelease = movie.YearOfRelease
@@ -43,9 +44,11 @@ public class MoviesController : ControllerBase
     }
 
     [HttpGet(ApiEndpoints.Movies.Get)]
-    public async Task<IActionResult> Get([FromRoute] Guid id)
+    public async Task<IActionResult> Get([FromRoute] string idOrSlug)
     {
-        var movie = await _movieRepository.GetByIdAsync(id);
+        var movie = Guid.TryParse(idOrSlug, out var id)
+            ? await _movieRepository.GetByIdAsync(id)
+            : await _movieRepository.GetBySlugAsync(idOrSlug);
         if (movie is null)
         {
             return NotFound();
